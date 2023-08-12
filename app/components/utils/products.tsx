@@ -12,7 +12,8 @@ export const products = [
           color: "White",
           colorCode: "#FFFFFF",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688622161445-iphone14-white.png?alt=media&token=fe2065e5-fdfe-4a6f-baa6-380b5fad90b8",
+            // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688622161445-iphone14-white.png?alt=media&token=fe2065e5-fdfe-4a6f-baa6-380b5fad90b8",
+            "/images/pngimg.com - iphone_14_PNG21.png"
         },
         {
           color: "Gray",
@@ -37,7 +38,8 @@ export const products = [
           color: "Black",
           colorCode: "#000000",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688529886610-black-logitech-keyboard.jpg?alt=media&token=353aa276-1316-4e50-bc26-8e3828fe6cdd",
+            // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688529886610-black-logitech-keyboard.jpg?alt=media&token=353aa276-1316-4e50-bc26-8e3828fe6cdd",
+            "/images/Light-Keyboard-And-Mouse-PNG-File.png"
         },
       ],
       reviews: [
@@ -77,8 +79,9 @@ export const products = [
           color: "Black",
           colorCode: "#000000",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386605041-iphone12-black.jpg?alt=media&token=32abf316-ddf6-4870-9e1e-a7c884b750d6",
-        },
+            // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386605041-iphone12-black.jpg?alt=media&token=32abf316-ddf6-4870-9e1e-a7c884b750d6",
+            "/images/02.jpg"
+          },
         {
           color: "Blue",
           colorCode: " #0000FF",
@@ -150,8 +153,9 @@ export const products = [
           color: "Graphite",
           colorCode: " #383838",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688529379028-logitech-graphite-mouse.jpg?alt=media&token=f9dfba29-832f-4c58-88c6-a7a0ae6b22bf",
-        },
+            // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688529379028-logitech-graphite-mouse.jpg?alt=media&token=f9dfba29-832f-4c58-88c6-a7a0ae6b22bf",
+             "/images/7-pc-mouse-png-image.png"
+          },
       ],
       reviews: [],
     },
@@ -169,8 +173,9 @@ export const products = [
           color: "Black",
           colorCode: "#000000",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688041293609-watch-black.jpg?alt=media&token=270f918c-d9f5-41a2-ad32-45d5f3c66bf0",
-        },
+            // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688041293609-watch-black.jpg?alt=media&token=270f918c-d9f5-41a2-ad32-45d5f3c66bf0",
+              "/images/Apple-Watch.jpg"
+          },
         {
           color: "Silver",
           colorCode: "#C0C0C0",
