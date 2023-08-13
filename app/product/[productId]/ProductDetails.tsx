@@ -3,6 +3,7 @@ import {useCallback, useState} from "react";
 import { Rating } from "@mui/material";
 import SetColor from "@/app/components/products/SetColot";
 import SetQuantity from "@/app/components/products/SetQuantity";
+import Button from "@/app/components/Button";
 
 interface ProductDetailsProps {
     product: any;
@@ -55,7 +56,6 @@ const ProductDetails :React.FC<ProductDetailsProps> = ({product}) => {
         if(cartProduct.quantity === 99) {
             return;
         }
-
         setCartProduct((prev) => {
             return {...prev, quantity: ++prev.quantity}
         })
@@ -66,7 +66,6 @@ const ProductDetails :React.FC<ProductDetailsProps> = ({product}) => {
         if(cartProduct.quantity === 1){
             return;
         }
-
         setCartProduct((prev) => {
             return {...prev , quantity: --prev.quantity}
         })
@@ -104,7 +103,12 @@ const ProductDetails :React.FC<ProductDetailsProps> = ({product}) => {
                  handleQtyIncrease={handleQtyIncrease}
                  />
                  <Horizontal/>
-                 <div>add to cart</div>
+                 <div className="max-w-[300px]">
+                    <Button
+                    label="Add To Cart"
+                    onClick={() => {}}
+                    />
+                 </div>
             </div>
         </div>
      );
