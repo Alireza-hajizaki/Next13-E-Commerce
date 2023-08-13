@@ -5,6 +5,7 @@ import SetColor from "@/app/components/products/SetColot";
 import SetQuantity from "@/app/components/products/SetQuantity";
 import Button from "@/app/components/Button";
 import ProductImage from "@/app/components/products/ProductImage";
+import { useCart } from "@/hooks/useCart";
 
 interface ProductDetailsProps {
     product: any;
@@ -32,7 +33,7 @@ export type SelectedImgType = {
 }
 
 const ProductDetails :React.FC<ProductDetailsProps> = ({product}) => {
-
+    const {handleAddProductToCart, cartProducts} = useCart()
     const [cartProduct, setCartProduct] = useState<CartProductType>({
         id: product.id,
         name: product.name,
@@ -43,6 +44,9 @@ const ProductDetails :React.FC<ProductDetailsProps> = ({product}) => {
         quantity: 1,
         price: product.price,
     })
+
+    console.log(cartProducts);
+    
     
     const productRating = product.reviews.reduce((acc:number , item:any) => item.rating + acc ,0 ) / product.reviews.length
 
@@ -111,7 +115,7 @@ const ProductDetails :React.FC<ProductDetailsProps> = ({product}) => {
                  <div className="max-w-[300px]">
                     <Button
                     label="Add To Cart"
-                    onClick={() => {}}
+                    onClick={() => handleAddProductToCart(cartProduct)}
                     />
                  </div>
             </div>
