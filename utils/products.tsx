@@ -1,29 +1,30 @@
 export const products = [
-    {
-      id: "64a654593e91b8e73a351e9b",
-      name: "iphone 14",
-      description: "Short description",
-      price: 2999,
-      brand: "apple",
-      category: "Phone",
-      inStock: true,
-      images: [
-        {
-          color: "White",
-          colorCode: "#FFFFFF",
-          image:
-            // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688622161445-iphone14-white.png?alt=media&token=fe2065e5-fdfe-4a6f-baa6-380b5fad90b8",
-            "/images/pngimg.com - iphone_14_PNG21.png"
+  {
+    id: "64a654593e91b8e73a351e9b",
+    name: "iphone 14",
+    description: "Short description",
+    price: 2999,
+    brand: "apple",
+    category: "Phone",
+    inStock: true,
+    images: [
+      {
+        color: "White",
+        colorCode: "#FFFFFF",
+        image:
+          // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688622161445-iphone14-white.png?alt=media&token=fe2065e5-fdfe-4a6f-baa6-380b5fad90b8",
+          "/images/pngimg.com - iphone_14_PNG21.png"
+      },
+      {
+        color: "Gray",
+        colorCode: "#808080",
+        image:
+          // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688622165836-iphone14-gray.png?alt=media&token=58f684db-998e-43eb-aa06-efe3d6ccfad4",
+          "/images/iphone14-gray.png"
         },
-        {
-          color: "Gray",
-          colorCode: "#808080",
-          image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688622165836-iphone14-gray.png?alt=media&token=58f684db-998e-43eb-aa06-efe3d6ccfad4",
-        },
-      ],
-      reviews: [],
-    },
+    ],
+    reviews: [],
+  },
     {
       id: "64a4ebe300900d44bb50628a",
       name: "Logitech MX Keys Advanced Wireless Illuminated Keyboard, Tactile Responsive Typing, Backlighting, Bluetooth, USB-C, Apple macOS, Microsoft Windows, Linux, iOS, Android, Metal Build (Black)",
@@ -80,20 +81,22 @@ export const products = [
           colorCode: "#000000",
           image:
             // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386605041-iphone12-black.jpg?alt=media&token=32abf316-ddf6-4870-9e1e-a7c884b750d6",
-            "/images/02.jpg"
+            "/images/iphone12-black.png"
           },
         {
-          color: "Blue",
-          colorCode: " #0000FF",
+          color: "white",
+          colorCode: " #FFFFFF",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386607274-iphone12-blue.jpg?alt=media&token=e83a9b13-86b6-4518-9f1e-8ddef12ba9a2",
-        },
+            // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386607274-iphone12-blue.jpg?alt=media&token=e83a9b13-86b6-4518-9f1e-8ddef12ba9a2",
+            "/images/iphone12-white.png"
+          },
         {
-          color: "Red",
-          colorCode: "#FF0000",
+          color: "green",
+          colorCode: "#008000",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386608652-iphone12-red.jpg?alt=media&token=603a9e86-5b8c-4f8d-b61c-c1c77e60e954",
-        },
+            // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386608652-iphone12-red.jpg?alt=media&token=603a9e86-5b8c-4f8d-b61c-c1c77e60e954",
+            "/images/iphone12-green.png"
+          },
       ],
       reviews: [
         {
@@ -170,18 +173,19 @@ export const products = [
       inStock: true,
       images: [
         {
-          color: "Black",
-          colorCode: "#000000",
+          color: "Pink",
+          colorCode: "#FFC0CB",
           image:
             // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688041293609-watch-black.jpg?alt=media&token=270f918c-d9f5-41a2-ad32-45d5f3c66bf0",
               "/images/Apple-Watch.jpg"
           },
         {
-          color: "Silver",
-          colorCode: "#C0C0C0",
+          color: "Red",
+          colorCode: "#FF0000",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688041295389-watch-silver.jpg?alt=media&token=7341e7f0-5c29-4f91-a7e3-57e50faafb74",
-        },
+            // "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688041295389-watch-silver.jpg?alt=media&token=7341e7f0-5c29-4f91-a7e3-57e50faafb74",
+            "/images/apple-watch-red.png"
+          },
       ],
       reviews: [],
     },
