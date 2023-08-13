@@ -1,7 +1,7 @@
 "use client";
 
 import Heading from "@/app/components/Heading";
-import { Rating } from "@mui/material";
+import { Avatar, Rating } from "@mui/material";
 import moment from "moment";
 
 interface ListRatingProps {
@@ -18,8 +18,8 @@ const ListRating: React.FC<ListRatingProps> = ({ product }) => {
             return (
               <div key={review.id} className="max-w-[300px]">
                 <div className="flex gap-2 items-center">
-                  <div>Avater</div>
-                  <div className="font-semibold">{review?.user.name}</div>
+                  <Avatar src={review.user.image}/>
+                  <div className="font-semibold">{review?.user.name}A</div>
                   <div>{moment(review.createdDate).fromNow()}</div>
                 </div>
                 <div className="mt-2">
