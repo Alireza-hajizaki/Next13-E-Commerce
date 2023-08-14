@@ -8,6 +8,7 @@ type CartContextType = {
   handleAddProductToCart : (product: CartProductType) => void
   handleRemoveProductFromCart : (product: CartProductType) => void
   handleCartQtyIncrease : (product: CartProductType) => void
+  handleCartQtyDecrease : (product: CartProductType) => void
 };
 
 export const CartContext = createContext<CartContextType | null>(null);
@@ -73,12 +74,33 @@ export const CartContextProvider = (props: Props) => {
     }
   } ,[cartProducts])
 
+  const handleCartQtyDecrease = useCallback((product:CartProductType) => {
+    let updatedCart;
+
+    if(product.quantity === 1){
+      return toast.error("Ooops! Minimum reached")
+    }
+
+    if(cartProducts){
+      updatedCart = [...cartProducts];
+
+      const exisingIndex = cartProducts.findIndex((item) => item.id === product.id)
+      if(exisingIndex > -1){
+        updatedCart[exisingIndex].quantity = --updatedCart[exisingIndex].quantity
+      }
+
+      setCartProducts(updatedCart);
+      localStorage.setItem("eShopCartItem" , JSON.stringify(updatedCart))
+    }
+  } ,[cartProducts])
+
   const value = {
     cartTotalQty,
     cartProducts,
     handleAddProductToCart,
     handleRemoveProductFromCart,
     handleCartQtyIncrease,
+    handleCartQtyDecrease
   };
 
   return <CartContext.Provider value={value} {...props} />;
