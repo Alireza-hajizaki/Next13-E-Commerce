@@ -13,7 +13,7 @@ const NavBar = () => {
                         <Link className={`${redressed.className} font-bold text-2xl`} href='/'>
                             E-Commerece Shop
                         </Link>
-                        <div className="hidden md:block">Search</div>
+                        <div className="hidden md:block mainContainer">Search</div>
                         <div className="flex items-center gap-8 md:gap-12">
                             <div>CartCount</div>
                             <div>UserMenu</div>
