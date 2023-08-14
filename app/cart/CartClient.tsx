@@ -4,7 +4,6 @@ import { useCart } from "@/hooks/useCart";
 import Link from "next/link";
 import { MdArrowBack } from "react-icons/md";
 import Heading from "../components/Heading";
-import { products } from "@/utils/products";
 import Button from "../components/Button";
 import ItemContent from "./ItemContent";
 
