@@ -10,7 +10,7 @@ interface CartProviderProps {
 const CartProvider : React.FC<CartProviderProps> = ({children}) => {
   return (
     <CartContextProvider>
-        {children}
+         {children}
     </CartContextProvider>
   )
 }
