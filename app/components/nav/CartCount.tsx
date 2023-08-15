@@ -6,7 +6,7 @@ import {CiShoppingCart} from "react-icons/ci";
 
 const CartCount = () => {
     const {cartTotalQty} = useCart();
-    const router = useRouter();
+    const router =useRouter();
 
     return ( 
         <div className="relative cursor-pointer" onClick={() => router.push("/cart")}>
